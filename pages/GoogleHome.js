@@ -15,11 +15,13 @@ class GoogleHome{
              
      }
      
-     static clickSearchbutton(){
+     static clickSearchbutton(searchtext){
          //browser.sleep(3000);
-         var search_button = element(by.name('btnK'));
-     return search_button.click();
-}
+       return browser.actions().sendKeys(protractor.Key.ENTER).perform();
+       
+        }
+     
+
 
 }
 

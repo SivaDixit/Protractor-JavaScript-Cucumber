@@ -10,7 +10,6 @@ class GmailLogin{
 
 static clickGmailLink(link){
 let clicklink = element(by.linkText(link));
-    browser.sleep(2000);
     return clicklink.click();
 
 
